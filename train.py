@@ -160,6 +160,7 @@ def run(config):
                                  else G),
                               z_=z_, y_=y_, config=config)
 
+  print('Total epoch number is '+ str(config['num_epochs']))
   print('Beginning training at epoch %d...' % state_dict['epoch'])
   # Train for specified number of epochs, although we mostly track G iterations.
   for epoch in range(state_dict['epoch'], config['num_epochs']):
